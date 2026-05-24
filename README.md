@@ -6,7 +6,7 @@ Auto TCP tuning script for overseas VPS accessed from mainland China.
 
 Make sure you check the script before executing!!!
 ```bash
-curl -fsSL URL | sudo bash
+curl -fsSL https://raw.githubusercontent.com/telly3e/vps-tcp-autotune/refs/heads/main/vps-tcp-autotune.sh | sudo bash
 ```
 
 
