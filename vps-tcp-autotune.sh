@@ -13,10 +13,10 @@ FORCE_BUFFER=""
 FORCE_CONGESTION=""
 
 TARGETS=(
-  "223.5.5.5"       # AliDNS
-  "119.29.29.29"    # DNSPod
-  "180.76.76.76"    # Baidu DNS
-  "114.114.114.114" # 114DNS
+  "www.189.cn"  # China Telecom
+  "baidu.com"
+  "taobao.com"
+  "163.com"
 )
 
 usage() {
@@ -28,7 +28,7 @@ Options:
   --no-forward           Force disable IPv4/IPv6 forwarding
   --auto-forward         Auto-detect forwarding need, default
   --tproxy               Enable TProxy-friendly extras: route_localnet=1 and rp_filter=0
-  --target IP            Add custom mainland China ping target
+  --target HOST          Add custom mainland China ping target, domain or IP
   --count N              Ping count per target, default: 5
   --buffer BYTES         Force TCP buffer max, e.g. 33554432, 67108864, 134217728
   --congestion NAME      Force congestion control, e.g. bbr, cubic
@@ -41,7 +41,7 @@ Examples:
   bash $0 --no-forward
   bash $0 --tproxy --forward
   bash $0 --buffer 67108864
-  bash $0 --target 223.5.5.5 --count 8
+  bash $0 --target baidu.com --target 163.com --count 8
 EOF
 }
 
