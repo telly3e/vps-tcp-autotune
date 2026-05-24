@@ -13,7 +13,7 @@ curl -fsSL https://raw.githubusercontent.com/telly3e/vps-tcp-autotune/refs/heads
 Preview only:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/yourname/vps-tcp-autotune/main/vps-tcp-autotune.sh -o /tmp/vps-tcp-autotune.sh
+curl -fsSL https://raw.githubusercontent.com/telly3e/vps-tcp-autotune/refs/heads/main/vps-tcp-autotune.sh -o /tmp/vps-tcp-autotune.sh
 chmod +x /tmp/vps-tcp-autotune.sh
 sudo /tmp/vps-tcp-autotune.sh --dry-run
 ```
