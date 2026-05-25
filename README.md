@@ -1,8 +1,13 @@
-# VPS TCP Autotune
+## Auto SSHD config
+```bash
+curl -fsSL https://raw.githubusercontent.com/telly3e/vps-tcp-autotune/refs/heads/main/auto-sshd-config.sh -o /tmp/ssh-hardening-22222.sh && chmod +x /tmp/ssh-hardening-22222.sh && sudo /tmp/ssh-hardening-22222.sh --user nini
+```
+
+## VPS TCP Autotune
 
 Auto TCP tuning script for overseas VPS accessed from mainland China.
 
-## Usage
+### Usage
 
 Make sure you check the script before executing!!!
 ```bash
@@ -33,7 +38,7 @@ For transparent proxy / TProxy gateway:
 sudo /tmp/vps-tcp-autotune.sh --tproxy --forward
 ```
 
-## 自动判断逻辑
+### 自动判断逻辑
 ```
 RTT <= 80ms：
   亚太优质线路倾向，使用 32MB buffer
